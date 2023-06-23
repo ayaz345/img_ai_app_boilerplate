@@ -43,7 +43,7 @@ def main():
                     with st.spinner("The magic of our AI has started...."):
                         label = our_image_classifier(image)
                         time.sleep(8)
-                    st.success("We predict this image to be: "+label)
+                    st.success(f"We predict this image to be: {label}")
                     rating = st.slider("Do you mind rating our service?",1,10)
                 except:
                     st.error("We apologize something went wrong 🙇🏽‍♂️")
